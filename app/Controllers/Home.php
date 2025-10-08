@@ -7,7 +7,7 @@ class Home extends BaseController
 {
     public function index()
     {
-        helper('text'); // 👈 zpřístupní character_limiter()
+        helper('text');
 
         $articleModel = new ArticleModel();
 
