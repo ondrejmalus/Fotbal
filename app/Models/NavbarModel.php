@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 
 class NavbarModel extends Model
 {
-    protected $table = 'ball_navbar';   // tvoje tabulka
+    protected $table = 'ball_navbar';
     protected $primaryKey = 'id';
     protected $allowedFields = ['title', 'url', 'position'];
 
