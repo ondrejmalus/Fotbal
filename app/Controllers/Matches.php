@@ -48,7 +48,7 @@ class Matches extends BaseController
     $home = $teamModel->find($game['home_tm']);
     $away = $teamModel->find($game['away_tm']);
 
-    return view('matches/view', [
+    return view('matches/matches', [
         'game' => $game,
         'home' => $home,
         'away' => $away

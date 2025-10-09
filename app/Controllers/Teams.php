@@ -4,6 +4,6 @@ class Teams extends BaseController
 {
     public function index()
     {
-        return view('teams/index');
+        return view('teams/teams');
     }
 }

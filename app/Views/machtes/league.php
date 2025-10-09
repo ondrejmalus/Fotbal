@@ -13,14 +13,14 @@
                 $home = $teams_map[$game['home_tm']] ?? ['name' => $game['home'], 'logo' => null];
                 $away = $teams_map[$game['away_tm']] ?? ['name' => $game['away'], 'logo' => null];
             ?>
-                <a href="<?= site_url('matches/view/' . $game['id']) ?>" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                <a href="<?= site_url('matches/league/' . $game['id']) ?>" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
                     <span>
                         <?php if($home['logo']): ?>
-                            <img src="<?= base_url('images/sigma/' . $home['logo']) ?>" alt="<?= esc($home['name']) ?>" style="height:24px;" class="me-1">
+                            <img src="<?= base_url('public/images/logos/' . $home['logo']) ?>" alt="<?= esc($home['name']) ?>" style="height:24px;" class="me-1">
                         <?php endif; ?>
                         <?= esc($home['name']) ?> vs 
                         <?php if($away['logo']): ?>
-                            <img src="<?= base_url('images/sigma/' . $away['logo']) ?>" alt="<?= esc($away['name']) ?>" style="height:24px;" class="me-1">
+                            <img src="<?= base_url('publicimages/logos/' . $away['logo']) ?>" alt="<?= esc($away['name']) ?>" style="height:24px;" class="me-1">
                         <?php endif; ?>
                         <?= esc($away['name']) ?>
                     </span>

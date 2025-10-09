@@ -14,9 +14,9 @@
                         $imgPath = FCPATH . 'public/images/sigma/' . $article['photo'];
                         if (!empty($article['photo']) && file_exists($imgPath)): 
                     ?>
-                        <img src="<?= base_url('images/sigma/' . $article['photo']) ?>" class="card-img-top" alt="Obrázek článku">
+                        <img src="<?= base_url('public/images/sigma/' . $article['photo']) ?>" class="card-img-top" alt="Obrázek článku">
                     <?php else: ?>
-                        <img src="<?= base_url('images/sigma/default.png') ?>" class="card-img-top" alt="Výchozí obrázek">
+                        <img src="<?= base_url('public/images/sigma/default.png') ?>" class="card-img-top" alt="Výchozí obrázek">
                     <?php endif; ?>
                     <div class="card-body">
                         <h5 class="card-title">
